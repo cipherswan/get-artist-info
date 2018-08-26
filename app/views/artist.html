@@ -13,12 +13,30 @@
                 </div>
                 <h1><%= artist.artist.name %></h1>
 
-                <h6><a href="<%= artist.artist.url%>">last.fm page</a></h6>
+                <% for(var i=0; i< artist.artist.tags.tag.length; i++ ){ %>
+                    <div class="chip"><%= artist.artist.tags.tag[i].name %></div>   
+                <% } %>
             </div>
 
             <div class="card about">
                 <h6><b>ABOUT</b></h6>
+                <hr>
+                
                 <p><%= artist.artist.bio.summary %></p>
+            </div>
+
+            <div class="card similar">
+                <h6><b>SIMILAR ARTISTS</b></h6>
+                <hr>
+
+                <% for(var x=0; x< artist.artist.similar.artist.length; x++ ){ %>
+                    <div class="chip">
+                        <img src="<%= artist.artist.similar.artist[x].image[0]['#text'] %>">
+                        <%= artist.artist.similar.artist[x].name %>
+                    </div>  
+                <% } %> 
+
+
             </div>
 
     
@@ -31,6 +49,7 @@
 <!-- <%= artist.artist.bio.summary %> -->
 <!-- <%= artist.artist.image[2]['#text']%> -->
 <!-- <%= artist.artist.tags.tag[0].name %> -->
+<!-- artist.similar.artist[0].name -->
 <!-- <% if (artist) { %>
 <% } %> -->
 

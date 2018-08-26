@@ -28,7 +28,7 @@ body {
     color: #000; }
 
 .artist-info {
-  margin: 5rem;
+  margin: 2rem 5rem;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -43,16 +43,32 @@ body {
       margin-bottom: -2rem;
       border-radius: 200px; }
     .artist-info .header .img {
-      background: #e2e2e2; }
+      background: #467979; }
+    .artist-info .header .chip {
+      margin-bottom: 1rem;
+      background: teal;
+      color: white; }
   .artist-info .about {
     padding: 1rem;
     grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row-start: 5;
-    grid-row-end: 7; }
+    grid-column-end: 9; }
+  .artist-info .similar {
+    padding: 1rem;
+    grid-column-start: 9;
+    grid-column-end: 13; }
+    .artist-info .similar .chip {
+      background: teal;
+      color: white; }
 
 .disabled {
   display: none; }
 
 .card {
   margin: 0; }
+  .card h6 {
+    margin: 0; }
+  .card hr {
+    margin-bottom: 2rem;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), teal, rgba(0, 0, 0, 0)); }
