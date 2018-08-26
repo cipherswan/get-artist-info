@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(236, 236, 236);
+}
+
+//index
+.content{
+    margin: 10rem;
+}
+
+//artist
+.artist-info{
+    margin: 2rem 5rem;
+    h1{
+        margin: 1rem 0;
+    }
+    h6{
+        margin: 0;
+    }
+    .header{
+        height: 20vh;
+        background: grey;
+    }
+}
+
+//utility
+.disabled{
+    display: none;
+}
+
+.card{
+    padding: 1rem;
+    background: white;
+}

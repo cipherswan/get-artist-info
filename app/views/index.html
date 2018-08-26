@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/head.html%>
+</head>
+<body>
+    
+    <div class="content">
+
+        <form method="post" action="/post">
+            <div class="input-field">
+                <input id="artist_name" type="text" name="artistName" class="validate">
+                <label for="artist_name">Enter an Artist Name and Hit Enter!</label>
+                <input type="submit" value="submit" class="disabled">
+            </div>
+        </form>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</body>
+</html>

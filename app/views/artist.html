@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/head.html%>
+</head>
+<body>
+    <div class="artist-info">
+        <% if (artist) { %>
+            <div class="col s12">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="<%= artist.artist.image[3]['#text'] %>">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h1><%= artist.artist.name %></h1>
+                            <h6>Listeners: <b><%= artist.artist.stats.listeners %></b> Playcount: <b><%= artist.artist.stats.playcount %></b></h6>
+                            <hr>
+                            <p><%= artist.artist.bio.summary %></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% } %> 
+    </div>
+</body>
+</html>
+
+<!-- <%= artist.artist.name %> -->
+<!-- <%= artist.artist.bio.summary %> -->
+<!-- <%= artist.artist.image[2]['#text']%> -->
+<!-- <% if (artist) { %>
+<% } %> -->

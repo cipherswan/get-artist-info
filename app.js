@@ -2,6 +2,7 @@ require('dotenv').load();
 var express = require('express');
 var request = require('request');
 var bodyParser = require('body-parser');
+var path = require("path");
 var port = 3000;
 var artistObj;
 
@@ -10,8 +11,12 @@ var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+
 app.engine('html', require('ejs').renderFile);    
 app.set('view engine', 'ejs');
+app.use(express.static('app'));
+app.set('views', path.join(__dirname, '/app/views'));
+
 
 app.get('/', function (req, res) {
     res.render('index.html');
