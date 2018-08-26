@@ -23,7 +23,7 @@ app.post('/post', function (req, res) {
             return console.dir(error);
         }
         artistObj = JSON.parse(body);
-        console.log(artistObj);
+        //console.log(artistObj);
         res.render('artist.html',{
             artist: artistObj
         });
