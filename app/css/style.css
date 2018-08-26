@@ -4,28 +4,31 @@ body {
   background: #ececec; }
 
 .content {
-  margin: 10rem;
+  margin: 7rem;
+  text-align: center;
   /* label color */
   /* label focus color */
   /* label underline focus color */
   /* valid color */
   /* invalid color */
   /* icon prefix focus color */ }
+  .content h1 {
+    color: teal; }
   .content .input-field label {
-    color: #000; }
+    color: teal; }
   .content .input-field input[type=text]:focus + label {
-    color: #000; }
+    color: teal; }
   .content .input-field input[type=text]:focus {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid teal;
     box-shadow: 0 1px 0 0 #000; }
   .content .input-field input[type=text].valid {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid teal;
     box-shadow: 0 1px 0 0 #000; }
   .content .input-field input[type=text].invalid {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid red;
     box-shadow: 0 1px 0 0 #000; }
   .content .input-field .prefix.active {
-    color: #000; }
+    color: teal; }
 
 .artist-info {
   margin: 7rem;
@@ -57,6 +60,12 @@ body {
     .artist-info .similar .chip {
       background: teal;
       color: white; }
+
+.artist-nav {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: none; }
+  .artist-nav a {
+    color: teal; }
 
 .disabled {
   display: none; }
