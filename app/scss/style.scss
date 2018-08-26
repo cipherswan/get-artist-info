@@ -40,7 +40,7 @@ body{
 
 //artist
 .artist-info{
-    margin: 2rem 5rem;
+    margin: 7rem;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -49,8 +49,6 @@ body{
     .header{
         grid-column-start: 1;
         grid-column-end: 13;
-        grid-row-start: 1;
-        grid-row-end: 5;
         img{
             margin-top: 2rem;
             margin-bottom: -2rem;
@@ -70,15 +68,11 @@ body{
         padding: 1rem;
         grid-column-start: 1;
         grid-column-end: 9;
-        //grid-row-start: 5;
-        //grid-row-end: 9;
     }
     .similar{
         padding: 1rem;
         grid-column-start: 9;
         grid-column-end: 13;
-       //grid-row-start: 5;
-        //grid-row-end: 9;
         .chip{
             background: $accent-color;
             color: white;

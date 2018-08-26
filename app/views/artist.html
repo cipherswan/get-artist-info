@@ -28,18 +28,13 @@
             <div class="card similar">
                 <h6><b>SIMILAR ARTISTS</b></h6>
                 <hr>
-
                 <% for(var x=0; x< artist.artist.similar.artist.length; x++ ){ %>
                     <div class="chip">
                         <img src="<%= artist.artist.similar.artist[x].image[0]['#text'] %>">
                         <%= artist.artist.similar.artist[x].name %>
                     </div>  
                 <% } %> 
-
-
             </div>
-
-    
         </div>
     <% } %> 
 </body>

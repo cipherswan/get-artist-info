@@ -28,16 +28,14 @@ body {
     color: #000; }
 
 .artist-info {
-  margin: 2rem 5rem;
+  margin: 7rem;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 5px; }
   .artist-info .header {
     grid-column-start: 1;
-    grid-column-end: 13;
-    grid-row-start: 1;
-    grid-row-end: 5; }
+    grid-column-end: 13; }
     .artist-info .header img {
       margin-top: 2rem;
       margin-bottom: -2rem;
