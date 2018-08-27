@@ -8,10 +8,19 @@ body{
 
 //index
 .content{
-    margin: 7rem;
-    text-align: center;
+    margin: 10rem;
+    margin-left: 1rem;
+    margin-right: 10rem;
     h1{
         color: $accent-color;
+        text-shadow: 2px 2px 8px rgb(170, 170, 170);
+    }
+    h6{
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+    .nav-wrapper{
+        background: $accent-color;
     }
     /* label color */
     .input-field label {
@@ -44,7 +53,7 @@ body{
 
 //artist
 .artist-info{
-    margin: 7rem;
+    margin: 1rem 7rem;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(12, 1fr);

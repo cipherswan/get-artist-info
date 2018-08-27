@@ -4,8 +4,9 @@ body {
   background: #ececec; }
 
 .content {
-  margin: 7rem;
-  text-align: center;
+  margin: 10rem;
+  margin-left: 1rem;
+  margin-right: 10rem;
   /* label color */
   /* label focus color */
   /* label underline focus color */
@@ -13,7 +14,13 @@ body {
   /* invalid color */
   /* icon prefix focus color */ }
   .content h1 {
-    color: teal; }
+    color: teal;
+    text-shadow: 2px 2px 8px #aaaaaa; }
+  .content h6 {
+    margin: 0;
+    margin-bottom: 3rem; }
+  .content .nav-wrapper {
+    background: teal; }
   .content .input-field label {
     color: teal; }
   .content .input-field input[type=text]:focus + label {
@@ -31,7 +38,7 @@ body {
     color: teal; }
 
 .artist-info {
-  margin: 7rem;
+  margin: 1rem 7rem;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
