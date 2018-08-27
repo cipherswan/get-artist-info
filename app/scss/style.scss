@@ -128,6 +128,13 @@ body{
 }
 
 @media screen and (max-width: 601px){
+    .artist-nav{
+        a{
+            .fas{
+                display: none;
+            }
+        }
+    }
     .artist-info{
         .about {
             grid-column-start: 1;
