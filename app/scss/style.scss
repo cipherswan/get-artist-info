@@ -81,6 +81,7 @@ body{
         padding: 1rem;
         grid-column-start: 1;
         grid-column-end: 9;
+        word-wrap: break-word;
     }
     .similar{
         padding: 1rem;
@@ -116,5 +117,25 @@ body{
         border: 0;
         height: 1px;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $accent-color, rgba(0, 0, 0, 0));
+    }
+}
+
+//@media queries
+@media screen and (max-width: 700px){
+    .artist-info{
+        margin: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 601px){
+    .artist-info{
+        .about {
+            grid-column-start: 1;
+            grid-column-end: 13;
+        }
+        .similar{
+            grid-column-start: 1;
+            grid-column-end: 13;
+        } 
     }
 }
